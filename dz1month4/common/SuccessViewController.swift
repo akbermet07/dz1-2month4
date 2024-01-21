@@ -16,6 +16,7 @@ class SuccessViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .cyan
@@ -26,5 +27,4 @@ class SuccessViewController: UIViewController {
             successImage.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
-    
 }

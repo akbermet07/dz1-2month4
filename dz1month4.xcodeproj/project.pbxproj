@@ -10,9 +10,11 @@
 		1753DF422B5C310D0093FBD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753DF412B5C310D0093FBD8 /* AppDelegate.swift */; };
 		1753DF442B5C310D0093FBD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753DF432B5C310D0093FBD8 /* SceneDelegate.swift */; };
 		1753DF462B5C310D0093FBD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753DF452B5C310D0093FBD8 /* ViewController.swift */; };
-		1753DF492B5C310D0093FBD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1753DF472B5C310D0093FBD8 /* Main.storyboard */; };
 		1753DF4B2B5C31100093FBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1753DF4A2B5C31100093FBD8 /* Assets.xcassets */; };
 		1753DF4E2B5C31100093FBD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1753DF4C2B5C31100093FBD8 /* LaunchScreen.storyboard */; };
+		1753DF592B5C3B520093FBD8 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753DF582B5C3B520093FBD8 /* SuccessViewController.swift */; };
+		1753DF5B2B5C3B790093FBD8 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753DF5A2B5C3B790093FBD8 /* SignUpController.swift */; };
+		177197732B5D6261001817FA /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177197722B5D6261001817FA /* ForgotPasswordController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		1753DF412B5C310D0093FBD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1753DF432B5C310D0093FBD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1753DF452B5C310D0093FBD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1753DF482B5C310D0093FBD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1753DF4A2B5C31100093FBD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1753DF4D2B5C31100093FBD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1753DF4F2B5C31100093FBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1753DF582B5C3B520093FBD8 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		1753DF5A2B5C3B790093FBD8 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		177197722B5D6261001817FA /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		1753DF402B5C310D0093FBD8 /* dz1month4 */ = {
 			isa = PBXGroup;
 			children = (
-				1753DF412B5C310D0093FBD8 /* AppDelegate.swift */,
-				1753DF432B5C310D0093FBD8 /* SceneDelegate.swift */,
-				1753DF452B5C310D0093FBD8 /* ViewController.swift */,
-				1753DF472B5C310D0093FBD8 /* Main.storyboard */,
-				1753DF4A2B5C31100093FBD8 /* Assets.xcassets */,
-				1753DF4C2B5C31100093FBD8 /* LaunchScreen.storyboard */,
+				1753DF572B5C39FB0093FBD8 /* resource */,
+				1753DF562B5C39DA0093FBD8 /* common */,
+				1753DF552B5C39740093FBD8 /* AppDelegate */,
 				1753DF4F2B5C31100093FBD8 /* Info.plist */,
 			);
 			path = dz1month4;
+			sourceTree = "<group>";
+		};
+		1753DF552B5C39740093FBD8 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1753DF432B5C310D0093FBD8 /* SceneDelegate.swift */,
+				1753DF412B5C310D0093FBD8 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1753DF562B5C39DA0093FBD8 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				1753DF452B5C310D0093FBD8 /* ViewController.swift */,
+				1753DF5A2B5C3B790093FBD8 /* SignUpController.swift */,
+				177197722B5D6261001817FA /* ForgotPasswordController.swift */,
+				1753DF582B5C3B520093FBD8 /* SuccessViewController.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		1753DF572B5C39FB0093FBD8 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				1753DF4C2B5C31100093FBD8 /* LaunchScreen.storyboard */,
+				1753DF4A2B5C31100093FBD8 /* Assets.xcassets */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +157,6 @@
 			files = (
 				1753DF4E2B5C31100093FBD8 /* LaunchScreen.storyboard in Resources */,
 				1753DF4B2B5C31100093FBD8 /* Assets.xcassets in Resources */,
-				1753DF492B5C310D0093FBD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1753DF592B5C3B520093FBD8 /* SuccessViewController.swift in Sources */,
+				177197732B5D6261001817FA /* ForgotPasswordController.swift in Sources */,
 				1753DF462B5C310D0093FBD8 /* ViewController.swift in Sources */,
+				1753DF5B2B5C3B790093FBD8 /* SignUpController.swift in Sources */,
 				1753DF422B5C310D0093FBD8 /* AppDelegate.swift in Sources */,
 				1753DF442B5C310D0093FBD8 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1753DF472B5C310D0093FBD8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1753DF482B5C310D0093FBD8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1753DF4C2B5C31100093FBD8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +320,6 @@
 				INFOPLIST_FILE = dz1month4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +346,6 @@
 				INFOPLIST_FILE = dz1month4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
